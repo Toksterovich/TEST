@@ -1,18 +1,13 @@
 def enter_pin ():
-    while True:
-        print("Enter PIN:")
-        code = 1234
-        pin = int(input())
-        if pin == code:
-            print("Hello")
-            break
-        else:
-            for i in range(3):
-                enter_pin()
+    print("Enter PIN:")
+    code = 1234
+    pin = int(input())
+    if pin == code:
+        print("Hello")
+    else:
+        enter_pin()
 
 enter_pin()
-
-
 
 bankomat = {
     100: 100,
